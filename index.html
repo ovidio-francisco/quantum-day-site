@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNISO Quantum Day 2026</title>
+    <meta
+      name="description"
+      content="Site oficial do UNISO Quantum Day 2026. Um dia de palestras, painéis, networking e conexões entre universidade, estudantes e empresas em torno da computação quântica."
+    />
+    <meta name="theme-color" content="#081120" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
+        <a class="brand" href="#topo" aria-label="Voltar ao topo">
+          <img src="assets/img/logo.png" alt="Logo do UNISO Quantum Day" />
+          <span>UNISO Quantum Day</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav">
+          <a href="#evento">Evento</a>
+          <a href="#programacao">Programação</a>
+          <a href="#temas">Temas</a>
+          <a href="#apoio">Apoiadores</a>
+          <a href="#inscricao">Inscrição</a>
+          <a href="#local">Local</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-dark">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-aos="fade-up">
+            <p class="eyebrow">Universidade • inovação • tecnologia quântica</p>
+            <h1>Uma vitrine para o futuro da computação quântica em Sorocaba.</h1>
+            <p class="hero-text">
+              O <strong>UNISO Quantum Day 2026</strong> reúne estudantes, pesquisadores,
+              empresas e entusiastas de tecnologia para um dia de palestras, painéis,
+              conexões e experiências voltadas ao ecossistema quântico.
+            </p>
+
+            <div class="hero-meta">
+              <div class="meta-card">
+                <span class="meta-label">Data</span>
+                <strong>07 de abril de 2026</strong>
+              </div>
+              <div class="meta-card">
+                <span class="meta-label">Local</span>
+                <strong>UNISO • Cidade Universitária</strong>
+              </div>
+              <div class="meta-card">
+                <span class="meta-label">Formato</span>
+                <strong>Palestras, painéis, networking e coffee break</strong>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#inscricao">Garantir inscrição</a>
+              <a class="btn btn-secondary" href="#programacao">Ver programação</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" data-aos="zoom-in" data-aos-delay="150">
+            <div class="countdown-card">
+              <p class="eyebrow small">Contagem regressiva</p>
+              <div class="countdown" id="countdown">
+                <div><span id="days">--</span><small>dias</small></div>
+                <div><span id="hours">--</span><small>horas</small></div>
+                <div><span id="minutes">--</span><small>min</small></div>
+                <div><span id="seconds">--</span><small>seg</small></div>
+              </div>
+              <p class="countdown-note">Prepare-se para viver um encontro entre academia, indústria e inovação aplicada.</p>
+            </div>
+
+            <div class="glass-card emphasis-card">
+              <span class="tag">Destaque</span>
+              <h2>Conexão real com talentos, pesquisa e empresas</h2>
+              <p>
+                O evento nasce para ampliar a divulgação da computação quântica,
+                fortalecer o ecossistema regional e aproximar estudantes de oportunidades,
+                projetos e organizações do setor.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-light" id="evento">
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="eyebrow">Sobre o evento</p>
+            <h2>Um encontro pensado para informar, conectar e projetar o futuro.</h2>
+            <p>
+              Mais do que um evento técnico, o UNISO Quantum Day foi concebido como uma
+              plataforma de divulgação científica e tecnológica. O site acompanha esse mesmo
+              propósito: apresentar o evento com clareza, gerar interesse, facilitar inscrições
+              e abrir espaço para apoiadores e patrocinadores.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card" data-aos="fade-up">
+              <h3>Para estudantes</h3>
+              <p>
+                Conteúdo acessível, inspirador e conectado às novas possibilidades de carreira
+                no universo da computação quântica.
+              </p>
+            </article>
+            <article class="feature-card" data-aos="fade-up" data-aos-delay="100">
+              <h3>Para empresas</h3>
+              <p>
+                Visibilidade qualificada, associação com inovação de ponta e contato direto com
+                talentos em formação e lideranças acadêmicas.
+              </p>
+            </article>
+            <article class="feature-card" data-aos="fade-up" data-aos-delay="200">
+              <h3>Para a comunidade</h3>
+              <p>
+                Divulgação de conhecimento, fortalecimento do ecossistema regional e promoção
+                de um ambiente de troca entre academia e mercado.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark stats-section">
+        <div class="container stats-grid">
+          <div class="stat-card" data-aos="fade-up">
+            <strong>3 períodos</strong>
+            <span>Manhã, tarde e noite com conteúdos distribuídos ao longo do dia</span>
+          </div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+            <strong>1 dia de imersão</strong>
+            <span>Palestras, painéis, mesa redonda e networking em um único evento</span>
+          </div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+            <strong>Hub regional</strong>
+            <span>Integração entre UNISO, ICT UNISOTECH, LACQ UNISO e parceiros</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="programacao">
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="eyebrow">Programação</p>
+            <h2>Uma jornada de conteúdo ao longo de todo o dia.</h2>
+            <p>
+              A agenda foi organizada para oferecer uma experiência progressiva, com abertura
+              institucional, talks, painéis, imersão, networking e mesa redonda.
+            </p>
+          </div>
+
+          <div class="schedule-layout">
+            <div class="schedule-column" data-aos="fade-up">
+              <div class="schedule-title">Manhã</div>
+              <ul class="schedule-list">
+                <li><span>08:00</span><div><strong>Credenciamento</strong><p>Recepção do público no auditório do Bloco C.</p></div></li>
+                <li><span>08:30</span><div><strong>Abertura oficial / Reitoria</strong><p>Boas-vindas institucionais e início do evento.</p></div></li>
+                <li><span>09:00</span><div><strong>Apresentação LACQ UNISO</strong><p>Panorama da liga, da proposta e das frentes de atuação.</p></div></li>
+                <li><span>09:20</span><div><strong>Intervalo</strong><p>Pausa breve entre os conteúdos da manhã.</p></div></li>
+                <li><span>09:40</span><div><strong>Talk</strong><p>Conteúdo técnico com foco em inovação e aplicações.</p></div></li>
+                <li><span>10:20</span><div><strong>Painel</strong><p>Discussão sobre cenário, desafios e oportunidades.</p></div></li>
+              </ul>
+            </div>
+
+            <div class="schedule-column" data-aos="fade-up" data-aos-delay="100">
+              <div class="schedule-title">Tarde</div>
+              <ul class="schedule-list">
+                <li><span>14:00</span><div><strong>Abertura do Quantum Hub</strong><p>Início da programação da tarde com ênfase em conexões.</p></div></li>
+                <li><span>14:15</span><div><strong>Talk ICT UNISOTECH + Sebrae</strong><p>Inovação, tecnologia e desenvolvimento de oportunidades.</p></div></li>
+                <li><span>14:30</span><div><strong>Talk Patrocinador Master</strong><p>Momento de destaque para a empresa apoiadora principal.</p></div></li>
+                <li><span>15:00</span><div><strong>Imersão DIRAQ</strong><p>Experiência temática voltada à computação quântica.</p></div></li>
+                <li><span>16:00</span><div><strong>LACQ UNISO / LACQ Feynman</strong><p>Troca entre iniciativas e fortalecimento do ecossistema.</p></div></li>
+                <li><span>16:20</span><div><strong>ICTQ Fóton + parceiros</strong><p>Conexão com instituições e iniciativas parceiras.</p></div></li>
+                <li><span>17:00</span><div><strong>Coffee break & networking</strong><p>Espaço para relacionamento entre público, equipe e empresas.</p></div></li>
+              </ul>
+            </div>
+
+            <div class="schedule-column" data-aos="fade-up" data-aos-delay="200">
+              <div class="schedule-title">Noite</div>
+              <ul class="schedule-list">
+                <li><span>19:00</span><div><strong>Abertura</strong><p>Retomada da programação no período noturno.</p></div></li>
+                <li><span>19:20</span><div><strong>Entrega do projeto LEONTI</strong><p>Apresentação do computador quântico fotônico.</p></div></li>
+                <li><span>19:40</span><div><strong>Painel</strong><p>Discussão temática com foco em mercado e aplicações.</p></div></li>
+                <li><span>21:00</span><div><strong>Mesa redonda</strong><p>Debate ampliado com convidados e representantes.</p></div></li>
+                <li><span>22:00</span><div><strong>Encerramento do evento</strong><p>Fechamento oficial do UNISO Quantum Day 2026.</p></div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="temas">
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="eyebrow">Temas em destaque</p>
+            <h2>Assuntos que aproximam o quântico do presente.</h2>
+            <p>
+              A proposta editorial do site valoriza títulos e temas que ajudam o visitante a
+              perceber relevância prática, oportunidade de carreira e impacto tecnológico.
+            </p>
+          </div>
+
+          <div class="topics-grid">
+            <article class="topic-card" data-aos="zoom-in">
+              <h3>Aplicações quânticas: o que muda?</h3>
+              <p>Uma introdução estratégica sobre o impacto do quântico em diferentes setores.</p>
+            </article>
+            <article class="topic-card" data-aos="zoom-in" data-aos-delay="80">
+              <h3>Linux para computação quântica</h3>
+              <p>Ambientes, ferramentas e cultura técnica que se conectam ao ecossistema quântico.</p>
+            </article>
+            <article class="topic-card" data-aos="zoom-in" data-aos-delay="160">
+              <h3>Decifrando o computador quântico</h3>
+              <p>Conteúdo para transformar curiosidade em compreensão acessível e inspiradora.</p>
+            </article>
+            <article class="topic-card" data-aos="zoom-in" data-aos-delay="240">
+              <h3>Profissões quânticas: o novo mercado</h3>
+              <p>Perspectivas de carreira para estudantes e oportunidades para empresas inovadoras.</p>
+            </article>
+            <article class="topic-card" data-aos="zoom-in" data-aos-delay="320">
+              <h3>O Brasil na era quântica</h3>
+              <p>Um olhar para iniciativas nacionais, formação de talentos e protagonismo regional.</p>
+            </article>
+            <article class="topic-card" data-aos="zoom-in" data-aos-delay="400">
+              <h3>Networking de alto valor</h3>
+              <p>Espaço para relacionamento entre academia, mercado, comunidade e apoiadores.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="apoio">
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="eyebrow">Patrocínio e apoio</p>
+            <h2>Um espaço preparado para valorizar marcas parceiras.</h2>
+            <p>
+              Como ainda não há logos finais dos patrocinadores, o layout abaixo usa
+              placeholders prontos para substituição. A seção foi pensada para funcionar bem
+              tanto com poucos quanto com vários apoiadores.
+            </p>
+          </div>
+
+          <div class="support-badges" data-aos="fade-up">
+            <span>Supremacia Quântica</span>
+            <span>Emaranhamento Quântico</span>
+            <span>Qubit</span>
+          </div>
+
+          <div class="sponsors-grid">
+            <div class="sponsor-card"><img src="assets/img/placeholder-sponsor-1.svg" alt="Placeholder patrocinador master" /></div>
+            <div class="sponsor-card"><img src="assets/img/placeholder-sponsor-2.svg" alt="Placeholder patrocinador" /></div>
+            <div class="sponsor-card"><img src="assets/img/placeholder-sponsor-3.svg" alt="Placeholder apoiador" /></div>
+            <div class="sponsor-card"><img src="assets/img/placeholder-sponsor-4.svg" alt="Placeholder apoiador" /></div>
+            <div class="sponsor-card"><img src="assets/img/placeholder-sponsor-5.svg" alt="Placeholder apoiador" /></div>
+            <div class="sponsor-card"><img src="assets/img/placeholder-sponsor-6.svg" alt="Placeholder apoiador" /></div>
+          </div>
+
+          <div class="note-box" data-aos="fade-up">
+            <p>
+              <strong>Sugestão de uso:</strong> esta área pode ser dividida futuramente em
+              <em>Patrocinador Master</em>, <em>Apoiadores</em> e <em>Parceiros institucionais</em>,
+              conforme os logos oficiais forem definidos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark cta-section" id="inscricao">
+        <div class="container cta-box" data-aos="fade-up">
+          <div>
+            <p class="eyebrow">Inscrição</p>
+            <h2>Garanta sua vaga no UNISO Quantum Day 2026.</h2>
+            <p>
+              A inscrição será realizada em plataforma externa. Neste modelo inicial,
+              deixamos um botão pronto para receber o link oficial assim que ele estiver disponível.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary large" href="https://example.com" target="_blank" rel="noopener noreferrer">Ir para a inscrição</a>
+            <small>Substitua o link acima pela plataforma oficial de inscrições.</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="local">
+        <div class="container location-grid">
+          <div data-aos="fade-right">
+            <p class="eyebrow">Local</p>
+            <h2>UNISO — Cidade Universitária Prof. Aldo Vannucchi</h2>
+            <p>
+              Rodovia Raposo Tavares, km 92,5 — Sorocaba/SP.
+            </p>
+            <p>
+              O layout abaixo já reserva espaço para um mapa incorporado, instruções de chegada
+              e informações adicionais para visitantes, apoiadores e equipe.
+            </p>
+            <a class="btn btn-secondary" href="https://maps.google.com/?q=UNISO%20Cidade%20Universit%C3%A1ria%20Prof.%20Aldo%20Vannucchi%20Sorocaba" target="_blank" rel="noopener noreferrer">Abrir no mapa</a>
+          </div>
+
+          <div class="map-frame" data-aos="fade-left">
+            <iframe
+              title="Mapa da UNISO Cidade Universitária"
+              src="https://www.google.com/maps?q=UNISO%20Cidade%20Universit%C3%A1ria%20Prof.%20Aldo%20Vannucchi%20Sorocaba&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark gallery-section">
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="eyebrow">Galeria futura</p>
+            <h2>Depois do evento, este espaço pode virar memória visual.</h2>
+            <p>
+              O site já deixa prevista uma seção para fotos da edição de 2026, reforçando o valor
+              institucional do evento e facilitando a divulgação posterior.
+            </p>
+          </div>
+
+          <div class="gallery-grid" data-aos="fade-up">
+            <div class="gallery-placeholder">Foto do evento</div>
+            <div class="gallery-placeholder">Palestras</div>
+            <div class="gallery-placeholder">Networking</div>
+            <div class="gallery-placeholder">Equipe e apoiadores</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/img/logo.png" alt="Logo do UNISO Quantum Day" />
+          <p>
+            UNISO Quantum Day 2026 — um encontro para divulgar, conectar e impulsionar o ecossistema
+            da computação quântica na região de Sorocaba.
+          </p>
+        </div>
+        <div>
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#evento">Sobre o evento</a></li>
+            <li><a href="#programacao">Programação</a></li>
+            <li><a href="#apoio">Apoio</a></li>
+            <li><a href="#inscricao">Inscrição</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Observações</h3>
+          <ul>
+            <li>Substitua placeholders por logos oficiais.</li>
+            <li>Atualize links de inscrição e redes sociais.</li>
+            <li>Inclua fotos oficiais após o evento.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
